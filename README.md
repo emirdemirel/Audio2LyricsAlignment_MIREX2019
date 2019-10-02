@@ -16,6 +16,22 @@ out_dir=alignments                                  ### NAME OF THE OUTPUT DIREC
 
 python audio2lyricsalignment.py $rec_path $lyrics_path $dataset $out_dir
 ```
+To learn more about the usage of the ``` audio2lyricsalignment.py ``` script, please use the guideline below:
+
+```
+usage: audio2lyricsalignment.py [-h] rec_path lyrics_path db_name out_dir
+
+positional arguments:
+  rec_path     Path to target audio recording
+  lyrics_path  Path to lyrics (.txt) file for corresponding audio recording
+  db_name      name of the dataset
+  out_dir      Path where the output alignment files will be saved
+
+optional arguments:
+  -h, --help   show this help message and exit
+
+```
+
 To generate alignments for other datasets, set the dataset variable with the corresponding name
 
 Jamendo : ```dataset=jamendo```
