@@ -12,3 +12,8 @@ Run the following line on terminal for generating the word-level alignments for 
 dataset=hansen
 run.sh --dataset $dataset
 ```
+To generate alignments for other datasets, set the dataset variable with the corresponding name
+
+Jamendo : ```dataset=jamendo```
+Gracenote : ```dataset=gracenote```
+Mauch : ```dataset=mauch```
