@@ -13,13 +13,16 @@ Kaldi (http://kaldi-asr.org/) is one of the most comprehensive open source toolk
    - Once download is complete, navigate to the directory where you cloned Kaldi. This README explains how to build the toolkit. If you want to follow the installation instructions, run ```./INSTALL``` in the main directory of Kaldi.
    - From the main directory, navigate to ``` /tools```. To check the prerequisites for Kaldi, first run
    
-  ```extras/check_dependencies.sh```
+  ```extras/check_dependencies.sh
+  ```
 and see if there are any system-level installations you need to do  
 
    - When the dependencies are installed, run
-   ``` make ```
+   ``` make 
+   ```
    If you have multiple cores in your machine and want to speed things up, you can do so by running
-   ``` make -j 4```
+   ``` make -j 4`
+   ``
 where ``` j ``` indicates number of jobs in parallel.
 
   - When this is complete, navigate to ``` /src ``` from the main directory of Kaldi. Then run
