@@ -3,6 +3,11 @@ Repository prepared for the MIREX 2019 - Audio-to-Lyrics Alignment Challenge
 
 ## Installation
 
+To successfully run the main alignment script in this repository, please follow the step-by-step installation instructions below :
+
+### 1) Install Kaldi ASR Toolkit
+
+Kaldi (http://kaldi-asr.org/) is one of the most comprehensive open source toolkits available for research, which is the main tool used in this project. To install the toolkit, first clone the repository from here: https://github.com/kaldi-asr/kaldi
 
 ## How to run
 
