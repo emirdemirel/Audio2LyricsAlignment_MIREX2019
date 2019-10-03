@@ -25,7 +25,7 @@ and see if there are any system-level installations you need to do
    If you have multiple cores in your machine and want to speed things up, you can do so by running
    ``` 
    make -j 4`
-   ``
+   ```
 where ``` j ``` indicates number of jobs in parallel.
 
   - When this is complete, navigate to ``` /src ``` from the main directory of Kaldi. Then run
