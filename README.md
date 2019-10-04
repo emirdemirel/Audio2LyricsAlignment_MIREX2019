@@ -8,6 +8,17 @@ To successfully run the main alignment script in this repository, please follow 
 
 ### 1) Set up a new virtual environment for this project
 
+It would be safer to create a virtual environment to run and execute the scripts in this repository. 
+   - You can create your own virtual environment as follows:
+   ```
+   virtual_environment_name=Audio2Lyrics
+   python3 -m venv $virtual_environment_name
+   ```
+   Then activate the virtual environment:
+   ```
+   source Audio2Lyrics/bin/activate
+   ```
+   - One can use ```conda``` command to create a virtual environment as well.
 
 ### 2) Install Kaldi ASR Toolkit
 
@@ -41,7 +52,7 @@ where ``` j ``` indicates number of jobs in parallel.
   
 ### 3) Install Python requirements
 
-TODO
+  While your virtual environment is active, run the following to install all the python dependencies:
   
 
 ## How to run
