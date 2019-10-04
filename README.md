@@ -18,7 +18,7 @@ It would be safer to create a virtual environment to run and execute the scripts
    ```
    source Audio2Lyrics/bin/activate
    ```
-   - One can use ```conda``` command to create a virtual environment as well.
+   - One can use Anaconda to create a virtual environment as well. For more info regarding creating environments using Anaconda, please refer to https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands
 
 ### 2) Install Kaldi ASR Toolkit
 
