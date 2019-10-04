@@ -10,6 +10,7 @@ To successfully run the main alignment script in this repository, please follow 
 
   Navigate to the directory that you want to download this repository. 
   ```
+   WORKSPACE=your/working/directory
    cd $WORKSPACE
    ```
    Then clone the repository
