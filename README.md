@@ -78,6 +78,11 @@ where ``` j ``` indicates number of jobs in parallel.
   
   While your virtual environment is active, run the following to install all the python dependencies:
   
+   ```
+   pip install -r requirements.txt
+   ```
+  
+  
 
 ## How to run
 
