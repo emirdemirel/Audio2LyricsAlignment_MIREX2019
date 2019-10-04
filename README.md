@@ -25,7 +25,7 @@ and see if there are any system-level installations you need to do
    ```
    make 
    ```
-   If you have multiple cores in your machine and want to speed things up, you can do so by running
+   (OPTIONAL) If you have multiple cores in your machine and want to speed things up, you can do so by running
    ``` 
    make -j 4`
    ```
