@@ -6,6 +6,18 @@ Repository prepared for the MIREX 2019 - Audio-to-Lyrics Alignment Challenge
 
 To successfully run the main alignment script in this repository, please follow the step-by-step installation instructions below :
 
+### 0) Clone repository
+
+  Navigate to the directory that you want to download this repository. 
+  ```
+   cd $WORKSPACE
+   ```
+   Then clone the repository
+   ```
+   git clone https://github.com/emirdemirel/Audio2LyricsAlignment_MIREX2019.git
+   ```
+
+
 ### 1) Set up a new virtual environment for this project
 
 It would be safer to create a virtual environment to run and execute the scripts in this repository. 
