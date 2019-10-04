@@ -11,7 +11,7 @@
 
 #nj=20
 nj=1
-stage=0
+stage=4
 
 
 
@@ -113,7 +113,7 @@ if [[ $stage -le 4 ]]; then
 
   echo "Extracting alignments & Formatting them for visualization and evaluation"
   for i in  exp/tri3b_fmllr_ali_cleaned_${testset}/ali.*.gz;
-  do $KALDI_ROOT/src/bin/ali-to-phones --ctm-output exp/tri3b/final.mdl \
+  do $KALDI_ROOT/src/bin/ali-to-phones --ctm-output exp/tri3b_cleaned/final.mdl \
   ark:"gunzip -c $i|" -> ${i%.gz}.ctm;
   done;
 
