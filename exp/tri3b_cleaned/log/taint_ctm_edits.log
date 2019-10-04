@@ -1,7 +1,0 @@
-# steps/cleanup/internal/taint_ctm_edits.py exp/tri3b_cleaned/ctm_edits.modified exp/tri3b_cleaned/ctm_edits.tainted 
-# Started at Tue Sep 10 15:05:15 BST 2019
-#
-taint_ctm_edits.py: processed 124085 input lines, whose edit-types were: cor = 70.85%, sil = 17.74%, del = 7.75%, sub = 2.07%, ins = 1.57%, fix = 0.03%
-taint_ctm_edits.py: as a percentage of all lines, (1.02%, 1.18%, 0.99%) were (deletions, substitutions, insertions) that tainted adjacent lines.  3.22% of all lines were tainted.
-# Accounting: time=1 threads=1
-# Ended (code 0) at Tue Sep 10 15:05:16 BST 2019, elapsed time 1 seconds
