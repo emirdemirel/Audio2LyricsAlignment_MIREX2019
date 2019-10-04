@@ -71,6 +71,11 @@ where ``` j ``` indicates number of jobs in parallel.
   
 ### 3) Install Python requirements
 
+  Navigate to the directory of this repository
+  ```
+  cd Audio2LyricsAlignment_MIREX2019
+  ```
+  
   While your virtual environment is active, run the following to install all the python dependencies:
   
 
