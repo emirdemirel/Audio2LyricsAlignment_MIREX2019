@@ -2,6 +2,11 @@
 
 Repository prepared for the MIREX 2019 - Audio-to-Lyrics Alignment Challenge
 
+## Requirements
+
+Python 3.6.x or higher
+Operating system : Ubuntu 16.04 or higher
+
 ## Installation
 
 To successfully run the main alignment script in this repository, please follow the step-by-step installation instructions below :
