@@ -111,8 +111,11 @@ optional arguments:
   -h, --help   show this help message and exit
 
 ```
+   - When the program is executed and completed successfully, the alignments will be stored in ```alignments/$dataset``` directory.
 
-To generate alignments for other datasets, set the dataset variable with the corresponding name
+   - Extracted features are stored in ```mfcc_${dataset}/ ```
+
+   - (IMPORTANT) To generate alignments for other datasets, set the dataset variable with the corresponding name
 
 Jamendo : ```dataset=jamendo```
 Gracenote : ```dataset=gracenote```
