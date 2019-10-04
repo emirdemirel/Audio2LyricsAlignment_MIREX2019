@@ -1,0 +1,8 @@
+# align-text ark:exp/tri3b_cleaned/lattice_oracle/oracle_hyp.txt ark:exp/tri3b_cleaned/lattice_oracle/text ark,t:- | steps/cleanup/internal/get_ctm_edits.py --oov=239 --symbol-table=data/lang/words.txt /dev/stdin exp/tri3b_cleaned/lattice_oracle/ctm exp/tri3b_cleaned/lattice_oracle/ctm_edits 
+# Started at Tue Sep 10 15:05:14 BST 2019
+#
+align-text ark:exp/tri3b_cleaned/lattice_oracle/oracle_hyp.txt ark:exp/tri3b_cleaned/lattice_oracle/text ark,t:- 
+LOG (align-text[5.5.480~1-09abd]:main():align-text.cc:135) Done 8794 sentences, failed for 0
+get_ctm_edits.py: processed 8794 utterances
+# Accounting: time=1 threads=1
+# Ended (code 0) at Tue Sep 10 15:05:15 BST 2019, elapsed time 1 seconds

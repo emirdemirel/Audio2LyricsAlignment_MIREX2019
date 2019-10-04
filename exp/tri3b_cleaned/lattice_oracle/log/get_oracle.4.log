@@ -1,0 +1,618 @@
+# lattice-oracle "--write-lattices=ark:|gzip -c > exp/tri3b_cleaned/lattice_oracle/lat.4.gz" "ark:gunzip -c exp/tri3b_cleaned/lats/lat.4.gz |" "ark:utils/sym2int.pl --map-oov 239 -f 2- data/lang/words.txt data/train1/split40/4/text|" ark,t:- | utils/int2sym.pl -f 2- data/lang/words.txt > exp/tri3b_cleaned/lattice_oracle/oracle_hyp.4.txt 
+# Started at Tue Sep 10 15:04:33 BST 2019
+#
+lattice-oracle '--write-lattices=ark:|gzip -c > exp/tri3b_cleaned/lattice_oracle/lat.4.gz' 'ark:gunzip -c exp/tri3b_cleaned/lats/lat.4.gz |' 'ark:utils/sym2int.pl --map-oov 239 -f 2- data/lang/words.txt data/train1/split40/4/text|' ark,t:- 
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-001 read.
+sym2int.pl: replacing 1YUDI with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: replacing OHHH with 239
+sym2int.pl: not warning for OOVs any more times
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 9, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-001, best cost 0
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-003 read.
+** Replaced 25 instances of OOVs with 239
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-003, best cost 0
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-004 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-004, best cost 0
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-005 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 14, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-005, best cost 0
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-009 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 19, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-009, best cost 0
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-013 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 11.1111 [ 3 / 27, 2 insertions, 1 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-013, best cost 3
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-017 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 20 [ 3 / 15, 0 insertions, 3 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-017, best cost 3
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-020 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 13.6364 [ 3 / 22, 0 insertions, 3 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-020, best cost 3
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-024 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 14.2857 [ 1 / 7, 1 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-024, best cost 1
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-026 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 37.5 [ 3 / 8, 2 insertions, 1 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-026, best cost 3
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-027 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 33.3333 [ 2 / 6, 0 insertions, 2 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-027, best cost 2
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-028 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 54, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-028, best cost 0
+Lattice F125301051-391997824_124921-125300062_1573823866-GB-F-037 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F125301051-391997824_124921-125300062_1573823866-GB-F-037, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-006 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-006, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-007 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 9, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-007, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-010 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 3, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-010, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-011 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-011, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-012 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 9, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-012, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-016 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-016, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-017 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 25 [ 1 / 4, 0 insertions, 0 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-017, best cost 1
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-019 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 9, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-019, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-021 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-021, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-022 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 9, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-022, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-025 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 25 [ 1 / 4, 0 insertions, 0 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-025, best cost 1
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-026 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 50 [ 2 / 4, 0 insertions, 2 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-026, best cost 2
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-027 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 50 [ 2 / 4, 0 insertions, 2 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-027, best cost 2
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-029 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 9, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-029, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-031 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-031, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-032 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 9, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-032, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-034 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-034, best cost 0
+Lattice F1257835311-671453965_926837-1257844088_1662806084-GB-F-036 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1257835311-671453965_926837-1257844088_1662806084-GB-F-036, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-001 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-001, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-002 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-002, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-003 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-003, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-004 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 11.1111 [ 1 / 9, 0 insertions, 0 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-004, best cost 1
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-005 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 3, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-005, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-006 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 14.2857 [ 1 / 7, 0 insertions, 1 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-006, best cost 1
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-007 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 12.5 [ 1 / 8, 0 insertions, 0 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-007, best cost 1
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-008 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-008, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-009 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 23.0769 [ 3 / 13, 0 insertions, 2 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-009, best cost 3
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-011 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 19, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-011, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-015 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-015, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-016 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 12, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-016, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-018 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 11.1111 [ 1 / 9, 0 insertions, 0 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-018, best cost 1
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-019 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-019, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-020 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 33.3333 [ 2 / 6, 0 insertions, 0 deletions, 2 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-020, best cost 2
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-021 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 13, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-021, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-023 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 14.2857 [ 1 / 7, 0 insertions, 0 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-023, best cost 1
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-024 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-024, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-025 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 14.2857 [ 2 / 14, 2 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-025, best cost 2
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-028 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-028, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-029 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 100 [ 1 / 1, 0 insertions, 0 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-029, best cost 1
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-030 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 12.5 [ 2 / 16, 0 insertions, 0 deletions, 2 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-030, best cost 2
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-032 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-032, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-033 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-033, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-034 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 14, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-034, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-037 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 14.2857 [ 2 / 14, 2 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-037, best cost 2
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-040 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-040, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-041 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 12.5 [ 1 / 8, 1 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-041, best cost 1
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-043 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 9, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-043, best cost 0
+Lattice F1261578186-3771456_3771456-1221818620_1511368441-GB-F-045 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1261578186-3771456_3771456-1221818620_1511368441-GB-F-045, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-001 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-001, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-002 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-002, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-003 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 8.33333 [ 1 / 12, 0 insertions, 1 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-003, best cost 1
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-005 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-005, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-006 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-006, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-007 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-007, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-009 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-009, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-010 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-010, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-011 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 13, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-011, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-013 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 17.6471 [ 3 / 17, 0 insertions, 2 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-013, best cost 3
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-016 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 14, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-016, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-020 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 75 [ 3 / 4, 0 insertions, 2 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-020, best cost 3
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-021 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 80 [ 4 / 5, 2 insertions, 0 deletions, 2 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-021, best cost 4
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-022 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 16.6667 [ 1 / 6, 1 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-022, best cost 1
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-023 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-023, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-024 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-024, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-025 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-025, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-026 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-026, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-027 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-027, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-029 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 5.55556 [ 1 / 18, 1 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-029, best cost 1
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-032 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-032, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-033 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 5.88235 [ 1 / 17, 0 insertions, 1 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-033, best cost 1
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-036 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 16.6667 [ 4 / 24, 0 insertions, 4 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-036, best cost 4
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-046 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-046, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-047 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-047, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-048 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-048, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-049 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 17, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-049, best cost 0
+Lattice F1274311183-349554271_59921-1081981670_1558495527-GB-F-052 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 6.06061 [ 2 / 33, 1 insertions, 0 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1274311183-349554271_59921-1081981670_1558495527-GB-F-052, best cost 2
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-012 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-012, best cost 0
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-013 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-013, best cost 0
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-014 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-014, best cost 0
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-015 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-015, best cost 0
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-017 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-017, best cost 0
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-021 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-021, best cost 0
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-022 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 50 [ 2 / 4, 2 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-022, best cost 2
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-025 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-025, best cost 0
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-026 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-026, best cost 0
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-027 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-027, best cost 0
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-028 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-028, best cost 0
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-030 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-030, best cost 0
+Lattice F1277729225-143697177_169732-450443296_1593472336-GB-F-033 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 11.1111 [ 1 / 9, 1 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1277729225-143697177_169732-450443296_1593472336-GB-F-033, best cost 1
+Lattice F1281071958-272904904_103680-652363517_1533288469-GB-F-001 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 15, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1281071958-272904904_103680-652363517_1533288469-GB-F-001, best cost 0
+Lattice F1281071958-272904904_103680-652363517_1533288469-GB-F-003 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 61.7284 [ 50 / 81, 0 insertions, 31 deletions, 19 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1281071958-272904904_103680-652363517_1533288469-GB-F-003, best cost 50
+Lattice F1281071958-272904904_103680-652363517_1533288469-GB-F-020 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 3.7037 [ 1 / 27, 0 insertions, 1 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1281071958-272904904_103680-652363517_1533288469-GB-F-020, best cost 1
+Lattice F1281071958-272904904_103680-652363517_1533288469-GB-F-025 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 60 [ 3 / 5, 2 insertions, 0 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1281071958-272904904_103680-652363517_1533288469-GB-F-025, best cost 3
+Lattice F1281071958-272904904_103680-652363517_1533288469-GB-F-026 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 12.5 [ 1 / 8, 0 insertions, 1 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1281071958-272904904_103680-652363517_1533288469-GB-F-026, best cost 1
+Lattice F1281071958-272904904_103680-652363517_1533288469-GB-F-033 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 42.8571 [ 3 / 7, 0 insertions, 3 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1281071958-272904904_103680-652363517_1533288469-GB-F-033, best cost 3
+Lattice F1281071958-272904904_103680-652363517_1533288469-GB-F-034 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1281071958-272904904_103680-652363517_1533288469-GB-F-034, best cost 0
+Lattice F1281071958-272904904_103680-652363517_1533288469-GB-F-035 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1281071958-272904904_103680-652363517_1533288469-GB-F-035, best cost 0
+Lattice F1281071958-272904904_103680-652363517_1533288469-GB-F-036 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 64.9573 [ 76 / 117, 0 insertions, 51 deletions, 25 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1281071958-272904904_103680-652363517_1533288469-GB-F-036, best cost 76
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-001 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-001, best cost 0
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-002 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 12, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-002, best cost 0
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-004 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-004, best cost 0
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-005 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 60 [ 3 / 5, 0 insertions, 3 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-005, best cost 3
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-006 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-006, best cost 0
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-007 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 38.4615 [ 5 / 13, 2 insertions, 0 deletions, 3 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-007, best cost 5
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-009 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 16.6667 [ 2 / 12, 2 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-009, best cost 2
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-013 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-013, best cost 0
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-014 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 10, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-014, best cost 0
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-016 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 25 [ 4 / 16, 0 insertions, 2 deletions, 2 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-016, best cost 4
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-020 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-020, best cost 0
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-021 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 9, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-021, best cost 0
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-024 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 12, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-024, best cost 0
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-026 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 30, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-026, best cost 0
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-032 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 50 [ 3 / 6, 0 insertions, 3 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-032, best cost 3
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-033 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 133.333 [ 4 / 3, 1 insertions, 0 deletions, 3 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-033, best cost 4
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-034 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 60 [ 3 / 5, 3 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-034, best cost 3
+Lattice F1283511112-196056811_560807-1049199379_1542192716-GB-F-035 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1283511112-196056811_560807-1049199379_1542192716-GB-F-035, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-001 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-001, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-003 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 7.14286 [ 1 / 14, 0 insertions, 1 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-003, best cost 1
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-005 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 38.4615 [ 5 / 13, 2 insertions, 2 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-005, best cost 5
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-007 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 4.22535 [ 3 / 71, 2 insertions, 1 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-007, best cost 3
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-022 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 7.69231 [ 1 / 13, 1 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-022, best cost 1
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-024 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-024, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-026 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 1, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-026, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-027 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 6.25 [ 1 / 16, 0 insertions, 1 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-027, best cost 1
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-030 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 5 [ 1 / 20, 1 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-030, best cost 1
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-034 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 25 [ 1 / 4, 1 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-034, best cost 1
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-035 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 11, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-035, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-038 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-038, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-041 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-041, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-042 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 19, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-042, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-046 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 17, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-046, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-049 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 7.69231 [ 1 / 13, 1 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-049, best cost 1
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-051 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-051, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-053 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 1, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-053, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-054 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 14, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-054, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-058 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-058, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-059 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-059, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-060 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-060, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-061 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-061, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-062 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-062, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-063 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 3.33333 [ 1 / 30, 0 insertions, 1 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-063, best cost 1
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-069 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 14.2857 [ 1 / 7, 1 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-069, best cost 1
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-070 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-070, best cost 0
+Lattice F1290795747-341375048_66101-1357431443_1697234667-GB-F-071 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 25 [ 2 / 8, 1 insertions, 0 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290795747-341375048_66101-1357431443_1697234667-GB-F-071, best cost 2
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-001 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-001, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-002 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-002, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-003 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-003, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-005 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 14, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-005, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-008 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 10, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-008, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-010 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-010, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-012 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 13.3333 [ 2 / 15, 0 insertions, 2 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-012, best cost 2
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-015 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-015, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-016 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 44.4444 [ 4 / 9, 0 insertions, 2 deletions, 2 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-016, best cost 4
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-019 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-019, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-020 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 8, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-020, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-021 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 25 [ 7 / 28, 1 insertions, 5 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-021, best cost 7
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-026 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-026, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-027 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 77.7778 [ 7 / 9, 0 insertions, 6 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-027, best cost 7
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-030 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 7, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-030, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-031 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 10, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-031, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-033 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-033, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-034 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 9, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-034, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-035 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-035, best cost 0
+Lattice F1290860162-388639153_112523-1290864367_1588576943-GB-F-036 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 6, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1290860162-388639153_112523-1290864367_1588576943-GB-F-036, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-011 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-011, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-012 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-012, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-013 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 9, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-013, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-016 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-016, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-017 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-017, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-018 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-018, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-020 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 5.88235 [ 1 / 17, 1 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-020, best cost 1
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-024 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 21.4286 [ 3 / 14, 1 insertions, 2 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-024, best cost 3
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-027 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 33.3333 [ 2 / 6, 0 insertions, 2 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-027, best cost 2
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-028 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-028, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-030 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-030, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-031 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 20 [ 1 / 5, 0 insertions, 0 deletions, 1 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-031, best cost 1
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-032 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 11, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-032, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-034 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 3, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-034, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-041 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 37.5 [ 3 / 8, 3 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-041, best cost 3
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-042 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 5, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-042, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-043 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 0 [ 0 / 4, 0 insertions, 0 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-043, best cost 0
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-044 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 13.3333 [ 2 / 15, 0 insertions, 2 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-044, best cost 2
+Lattice F1299168138-393858919_176664-901508571_1588438614-GB-F-047 read.
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:318) %WER 45.4545 [ 5 / 11, 0 insertions, 5 deletions, 0 sub ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:332) For utterance F1299168138-393858919_176664-901508571_1588438614-GB-F-047, best cost 5
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:383) Overall %WER 13.6004 [ 275 / 2022, 44 insertions, 154 deletions, 77 substitutions ]
+LOG (lattice-oracle[5.5.480~1-09abd]:main():lattice-oracle.cc:387) Scored 196 lattices, 0 not present in ref.
+# Accounting: time=4 threads=1
+# Ended (code 0) at Tue Sep 10 15:04:37 BST 2019, elapsed time 4 seconds

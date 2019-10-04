@@ -1,0 +1,487 @@
+# gmm-latgen-faster --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=false --word-symbol-table=exp/tri3b_cleaned/graphs/words.txt exp/tri3b_cleaned/final.mdl scp:exp/tri3b_cleaned/lats/split_fsts/HCLG.fsts.36.scp "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train1/split40/36/utt2spk scp:data/train1/split40/36/cmvn.scp scp:data/train1/split40/36/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3b_cleaned/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train1/split40/36/utt2spk ark:exp/tri3b/trans.36 ark:- ark:- |" "ark:|gzip -c > exp/tri3b_cleaned/lats/lat.36.gz" 
+# Started at Tue Sep 10 14:50:05 BST 2019
+#
+gmm-latgen-faster --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=false --word-symbol-table=exp/tri3b_cleaned/graphs/words.txt exp/tri3b_cleaned/final.mdl scp:exp/tri3b_cleaned/lats/split_fsts/HCLG.fsts.36.scp 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train1/split40/36/utt2spk scp:data/train1/split40/36/cmvn.scp scp:data/train1/split40/36/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3b_cleaned/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train1/split40/36/utt2spk ark:exp/tri3b/trans.36 ark:- ark:- |' 'ark:|gzip -c > exp/tri3b_cleaned/lats/lat.36.gz' 
+transform-feats exp/tri3b_cleaned/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+transform-feats --utt2spk=ark:data/train1/split40/36/utt2spk ark:exp/tri3b/trans.36 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train1/split40/36/utt2spk scp:data/train1/split40/36/cmvn.scp scp:data/train1/split40/36/feats.scp ark:- 
+M565341445-250285823_96404-565198312_1673026132-GB-M-001 YOU'VE GOT THE WORDS TO CHANGE A NATION BUT YOU'RE BITING YOUR TONGUE YOU'VE SPENT A LIFE TIME STUCK IN SILENCE AFRAID YOU'LL SAY SOMETHING WRONG IF NO ONE EVER HEARS IT HOW WE GONNA LEARN YOUR SONG 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-001 is -4.45296 over 1510 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-009 COME ON COME ON COME ON COME ON 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-009 is -4.08423 over 460 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-014 LITTLE DIFFERENT NEED TO BE ASHAMED 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-014 is -4.90831 over 371 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-019 HIDING IT AWAY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-019 is -3.7833 over 191 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-021 COME ON COME ON 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-021 is -3.85336 over 313 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-022 I WANNA SING I WANNA SHOUT I WANNA SCREAM 'TIL THE WORDS DRY OUT SO PUT IT IN ALL OF THE PAPERS I'M NOT AFRAID THEY CAN READ ALL ABOUT IT READ ALL ABOUT IT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-022 is -4.24867 over 2016 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-031 OH OH OH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-031 is -3.91298 over 201 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-032 OH OH OH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-032 is -4.02152 over 204 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-033 OH OH OH OH AT NIGHT WE'RE WAKING UP THE NEIGHBORS WHILE WE SING AWAY THE BLUES 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-033 is -4.21412 over 838 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-038 MAKING SURE THAT WE'RE REMEMBERED YEAH 'CAUSE WE ALL MATTER TOO 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-038 is -4.61843 over 477 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-040 IT'S THE TRUTH HAS BEEN FORBIDDEN THEN WE'RE BREAKING ALL THE RULES 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-040 is -4.64373 over 488 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-043 SO COME ON COME ON COME ON COME ON LET'S GET THE TV AND THE RADIO TO TUNE AGAIN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-043 is -4.32923 over 891 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-048 GOT SOME AIRPLAY OF VERSION OF EVENTS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-048 is -4.76463 over 372 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-050 I WILL SING WITH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-050 is -4.50506 over 101 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-052 YOU MY FOR IT'S COME ON COME ON I AND I WANNA SING I WANNA SHOUT I WANNA SCREAM 'TIL THE WORDS DRY OUT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-052 is -4.19105 over 1463 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-057 SO PUT IT IN ALL OF THE PAPERS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-057 is -4.16837 over 298 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-058 I'M NOT AFRAID THEY CAN READ ALL ABOUT IT READ ALL ABOUT IT OH OH OH OH OH OH OH OH OH OH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-058 is -3.9371 over 1586 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-065 OH OH OH OH OH OH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-065 is -3.85967 over 486 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-068 YEAH WE'RE ALL WONDERFUL WONDERFUL PEOPLE SO WHEN DID WE ALL GET SO FEARFUL 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-068 is -4.48797 over 846 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-071 FINDING OUR VOICES 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-071 is -3.07824 over 250 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-073 YEAH WE'RE ALL WONDERFUL WONDERFUL PEOPLE SO WHEN DID WE ALL GET SO FEARFUL AND NOW WE'RE FINALLY FINDING OUR VOICES 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-073 is -4.27584 over 1440 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-080 I WANNA SING I WANNA SHOUT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-080 is -4.01711 over 423 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-081 I WANNA SCREAM 'TIL THE WORDS DRY OUT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-081 is -4.40161 over 431 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-082 PUT IT IN ALL OF THE PAPERS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-082 is -3.98784 over 264 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-083 I'M NOT AFRAID THEY CAN READ ALL ABOUT IT READ ALL ABOUT IT OH OH OH OH OH OH OH OH OH OH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-083 is -4.02264 over 1625 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-089 OH OH OH OH OH OH OH OH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-089 is -4.13091 over 554 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-093 I WANNA SING I WANNA SHOUT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-093 is -4.09616 over 433 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-094 I WANNA SCREAM 'TIL THE WORDS DRY OUT SO PUT IT IN ALL OF THE PAPERS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-094 is -4.16328 over 750 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-096 I'M NOT AFRAID 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-096 is -4.2871 over 190 frames.
+M565341445-250285823_96404-565198312_1673026132-GB-M-097 THEY CAN READ ALL ABOUT IT READ ALL ABOUT IT OH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-250285823_96404-565198312_1673026132-GB-M-097 is -3.60834 over 955 frames.
+M565341445-5636766_137803-565347071_1326075145-GB-M-001 LOOK AT ME I WILL NEVER PASS FOR A PERFECT BRIDE OR A PERFECT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-5636766_137803-565347071_1326075145-GB-M-001 is -4.26883 over 933 frames.
+M565341445-5636766_137803-565347071_1326075145-GB-M-004 ON CAN IT BE I'M I'M NOT MEANT TO PLAY THIS PART NOW I SEE THAT IF ONE WERE TRULY TO BE MYSELF I WOULD BREAK MY FAMILY'S HEART 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-5636766_137803-565347071_1326075145-GB-M-004 is -4.04438 over 2051 frames.
+M565341445-5636766_137803-565347071_1326075145-GB-M-009 WHO IS THIS WILL I SEE IS STARING STRAIGHT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-5636766_137803-565347071_1326075145-GB-M-009 is -4.47183 over 787 frames.
+M565341445-5636766_137803-565347071_1326075145-GB-M-010 BACK AT ME WHY IS MY REFLECTION SOMEONE I DON'T KNOW SOMEHOW STOP I AM THOUGH I'VE TRIED WILL MY IN THE ONE I AM THOUGH I'VE TRIED WHEN WILL MY REFLECTION SHOW WILL DO NOT THE I AM INSIDE WILL AND WILL MY REFLECTION SHOW WANT <UNK> YOU ONE AND SO ONE YOU AND 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565341445-5636766_137803-565347071_1326075145-GB-M-010 is -4.30048 over 5044 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-008 LA 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-008 is -3.9854 over 110 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-013 SOMEONE SALTY GOT YOU DOWN LA 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-013 is -4.62698 over 244 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-016 SUGAR IN THE AIR JUST LOOK AROUND DON'T 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-016 is -5.02916 over 428 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-020 BUBBLE GUM DON'T <UNK> DROP IT LIKE A LOLLIPOP NEVER LET THE CRAVING STOP 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-020 is -5.29235 over 396 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-029 THIS LIFE IS SWEET SWEETER THAN YOU THINK 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-029 is -4.10479 over 447 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-031 GONNA LIVE THE DREAM LIKE A CANDY QUEEN LIKE A CANDY QUEEN THIS WORLD'S GOT MORE THAN YOU CAN EVER HOPE FOR 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-031 is -4.09034 over 932 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-037 WHY FOR LIKE A KID IN A CANDY STORE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-037 is -4.66996 over 412 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-045 LA LA LA LA LA LA 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-045 is -4.42685 over 214 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-052 TAKING MY PUP AND DOWN THE STREET LA 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-052 is -4.80152 over 317 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-058 WHY IS MY DOG SO CUTE TAKING 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-058 is -5.08739 over 361 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-061 GOT A JELLYBEAN HEARTBEAT KEEPING ME HUNGRY CHOCOLATE AND VANILLA WITH A STRAWBERRY SWIRL I'LL NEVER SUGARCOAT IS MY PUP AND IS SWEET 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-061 is -5.1268 over 852 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-069 THIS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-069 is -4.39321 over 117 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-074 THIS WORLD'S GOT MORE THAN YOU CAN EVER HOPE FOR 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-074 is -4.43376 over 528 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-078 LIKE A KID IN A CANDY STORE CANDY LIKE A KID IN A CANDY STORE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-078 is -4.59085 over 687 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-080 CANDY CANDY CANDY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-080 is -5.23419 over 186 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-081 CANDY LIKE A KID IN A KID 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-081 is -4.62051 over 337 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-083 CANDY CANDY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-083 is -4.32795 over 248 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-085 A KID IN A CANDY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-085 is -4.40002 over 163 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-086 THE WORLD IS OURS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-086 is -4.73536 over 215 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-087 LIKE A COOKIE JAR 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-087 is -5.15202 over 126 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-088 JUST YOU CAN IT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-088 is -5.05539 over 143 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-089 ANYTHING YOU CAN WANT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-089 is -4.81878 over 139 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-092 WHEN THE DAY TURNS DARK 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-092 is -5.13424 over 158 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-093 I'LL BE COUNTING POPCORN STARS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-093 is -5.08859 over 187 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-094 FALL ASLEEP ON MY MARSHMALLOW PILLOW AND TAKE ANOTHER BITE OF TOMORROW SEE YOU TOMORROW CANDY CANDY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-094 is -4.71633 over 889 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-099 KID IN A CANDY STORE CANDY CANDY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-099 is -4.6264 over 369 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-101 LIKE A KID IN A CANDY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-101 is -4.98794 over 201 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-102 CANDY CANDY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-102 is -4.16938 over 182 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-103 LIKE A KID IN STORE CANDY CANDY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-103 is -4.45921 over 408 frames.
+M565747737-3641342_3641342-1313740541_1520175895-GB-M-105 BE A KID CANDY STORE CANDY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3641342_3641342-1313740541_1520175895-GB-M-105 is -5.12625 over 411 frames.
+M565747737-3770023_3770023-1086988134_1612362323-GB-M-002 LIKE A SNOWMAN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3770023_3770023-1086988134_1612362323-GB-M-002 is -4.75095 over 371 frames.
+M565747737-3770023_3770023-1086988134_1612362323-GB-M-003 AND PLAY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3770023_3770023-1086988134_1612362323-GB-M-003 is -4.76887 over 178 frames.
+M565747737-3770023_3770023-1086988134_1612362323-GB-M-006 <UNK> <UNK> <UNK> <UNK> WE'RE NOT I 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.480~1-09abd]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (35542880,98208,14571576), after rebuilding, repo size was 25412672, effective beam was 5.26218 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:277) Determinization finished earlier than the beam for utterance M565747737-3770023_3770023-1086988134_1612362323-GB-M-006
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3770023_3770023-1086988134_1612362323-GB-M-006 is -5.05022 over 1799 frames.
+M565747737-3770023_3770023-1086988134_1612362323-GB-M-012 WE'RE <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> YEAH <UNK> <UNK> <UNK> A KID IN <UNK> <UNK> <UNK> <UNK> 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3770023_3770023-1086988134_1612362323-GB-M-012 is -4.82175 over 3863 frames.
+M565747737-3770023_3770023-1086988134_1612362323-GB-M-022 <UNK> <UNK> <UNK> <UNK> TOCK TOCK <UNK> BACK <UNK> 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3770023_3770023-1086988134_1612362323-GB-M-022 is -4.48773 over 6585 frames.
+M565747737-3770023_3770023-1086988134_1612362323-GB-M-024 I KNOW YOU'RE IN THERE PEOPLE ARE ASKING WHERE YOU'VE BEEN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3770023_3770023-1086988134_1612362323-GB-M-024 is -4.32252 over 679 frames.
+M565747737-3770023_3770023-1086988134_1612362323-GB-M-027 AND I'M RIGHT OUT HERE RED LET AT OTHER THERE AND WHAT ARE WE GONNA FOR YOU WANNA BUILD 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M565747737-3770023_3770023-1086988134_1612362323-GB-M-027 is -4.7041 over 2245 frames.
+M572078517-3771107_3771107-487002942_1539320418-GB-M-007 TAKE ANOTHER CHANCE TAKE A FALL TAKE A SHOT FOR YOU 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-3771107_3771107-487002942_1539320418-GB-M-007 is -4.59455 over 463 frames.
+M572078517-3771107_3771107-487002942_1539320418-GB-M-008 I NEED YOU LIKE A HEART NEEDS A BEAT BUT IT'S NOTHIN' NEW YEAH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-3771107_3771107-487002942_1539320418-GB-M-008 is -4.08611 over 768 frames.
+M572078517-3771107_3771107-487002942_1539320418-GB-M-009 I LOVED YOU WITH A FIRE RED NOW IT'S TURNIN' BLUE AND YOU SAY SORRY LIKE THE ANGEL HEAVEN LET ME THINK WAS YOU 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-3771107_3771107-487002942_1539320418-GB-M-009 is -4.352 over 1310 frames.
+M572078517-3771107_3771107-487002942_1539320418-GB-M-010 OH BUT I'M AFRAID IT'S TOO LATE TO APOLOGIZE IT'S TOO LATE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-3771107_3771107-487002942_1539320418-GB-M-010 is -4.55106 over 859 frames.
+M572078517-3771107_3771107-487002942_1539320418-GB-M-011 I SAID IT'S TO APOLOGIZE IT'S TOO 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-3771107_3771107-487002942_1539320418-GB-M-011 is -4.67377 over 642 frames.
+M572078517-3771107_3771107-487002942_1539320418-GB-M-013 TO APOLOGIZE IT'S 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-3771107_3771107-487002942_1539320418-GB-M-013 is -4.43348 over 576 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-001 GONNA BE A MIGHTY KING SO ENEMIES BE YOU WAY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-001 is -4.76512 over 389 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-006 GONNA BE THE MAIN EVENT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-006 is -4.36958 over 164 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-007 LIKE NO KING WAS BEFORE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-007 is -4.91726 over 222 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-008 BRUSHING UP ON LOOKING DOWN I'M WORKING ON MY ROAR 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-008 is -5.02261 over 397 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-012 OH I JUST CAN'T WAIT TO BE KING 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-012 is -3.93116 over 496 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-016 NO ONE SAYING DO THIS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-016 is -4.47478 over 159 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-018 NO ONE SAYING BE THERE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-018 is -4.56298 over 142 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-021 NO ONE SAYING STOP I 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-021 is -5.04901 over 159 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-023 NO ONE SAYING SEE HERE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-023 is -4.19817 over 196 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-026 FREE TO RUN AROUND ALL DAY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-026 is -3.73208 over 250 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-027 DEFINITELY OUT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-027 is -1.52229 over 163 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-029 FREE TO DO IT ALL MY WAY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-029 is -3.09404 over 478 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-032 KINGS DON'T NEED ADVICE FROM LITTLE <UNK> FOR THERE'S FOR A START 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-032 is -4.38638 over 376 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-042 OH I JUST CAN'T WAIT TO BE KING 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-042 is -3.25673 over 490 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-043 EVERYBODY LOOK LEFT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-043 is -4.43031 over 134 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-044 EVERYBODY LOOK RIGHT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-044 is -4.51667 over 166 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-045 EVERYWHERE YOU LOOK I'M 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-045 is -4.07218 over 159 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-046 STANDING IN THE SPOTLIGHT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-046 is -4.1291 over 186 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-049 EVERY CREATURE GO FOR BROKE AND SING LET'S HEAR IT IN THE HERD AND AND ON THE WING 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-049 is -3.29936 over 846 frames.
+M572078517-85074914_171321-683296815_1539526734-GB-M-053 IT'S GONNA BE KING SEE MY FINEST FLING OH I JUST CAN'T WAIT TO BE KING OH I JUST CAN'T WAIT TO BE KING OH I JUST CAN'T WAIT TO BE KING 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M572078517-85074914_171321-683296815_1539526734-GB-M-053 is -3.09821 over 2323 frames.
+M574146148-290042051_86217-574156500_1579697254-GB-M-001 IMAGINE THERE'S NO HEAVEN YOUR ONE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M574146148-290042051_86217-574156500_1579697254-GB-M-001 is -3.72149 over 570 frames.
+M574146148-290042051_86217-574156500_1579697254-GB-M-002 IT'S EASY IF YOU TRY NO HELL BELOW US 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M574146148-290042051_86217-574156500_1579697254-GB-M-002 is -3.23572 over 1181 frames.
+M574146148-290042051_86217-574156500_1579697254-GB-M-004 ABOVE US ONLY SKY IMAGINE ALL THE PEOPLE LIVING FOR TODAY I'M A IMAGINE THERE'S NO COUNTRIES BABY HER HARD TO ISN'T HARD TO KILL OR FOR AND NOTHING TO KILL OR DIE PEOPLE HOW AND NO RELIGION TOO GO ALL THE WORLD THIS IMAGINE ALL THE PEOPLE HOPE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M574146148-290042051_86217-574156500_1579697254-GB-M-004 is -3.88205 over 5040 frames.
+M574146148-290042051_86217-574156500_1579697254-GB-M-013 LIVING LIFE IN PEACE YOU YOU YOU YOU MAY SAY I'M A DREAMER 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M574146148-290042051_86217-574156500_1579697254-GB-M-013 is -3.45078 over 1281 frames.
+M574146148-290042051_86217-574156500_1579697254-GB-M-015 BUT I'M NOT THE ONE I HOPE SOME NO SOME DAY YOU'LL JOIN US 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M574146148-290042051_86217-574156500_1579697254-GB-M-015 is -4.48489 over 1200 frames.
+M574146148-290042051_86217-574156500_1579697254-GB-M-018 AND THE WORLD WILL BE AS ONE CAN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M574146148-290042051_86217-574156500_1579697254-GB-M-018 is -3.53078 over 597 frames.
+M574146148-290042051_86217-574156500_1579697254-GB-M-019 IMAGINE NO POSSESSIONS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M574146148-290042051_86217-574156500_1579697254-GB-M-019 is -4.20124 over 496 frames.
+M574146148-290042051_86217-574156500_1579697254-GB-M-020 I WONDER IF YOU CAN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M574146148-290042051_86217-574156500_1579697254-GB-M-020 is -3.72686 over 563 frames.
+M574146148-290042051_86217-574156500_1579697254-GB-M-021 NO NEED FOR GREED OR HUNGER A BROTHERHOOD OF MAN A BROTHERHOOD COME SHARING ALL THE MAN IMAGINE ALL THE BE FOR YOU SHARING ALL THE WORLD WILL YOU YOU MAY SAY HER I'M A DREAMER WORLD 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M574146148-290042051_86217-574156500_1579697254-GB-M-021 is -4.13154 over 3172 frames.
+M574146148-290042051_86217-574156500_1579697254-GB-M-027 BUT I'M NOT THE ONLY ONE I HOPE SOME DAY YOU'LL JOIN US 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M574146148-290042051_86217-574156500_1579697254-GB-M-027 is -4.62017 over 1149 frames.
+M574146148-290042051_86217-574156500_1579697254-GB-M-029 AND THE WORLD WILL BE AS ONE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M574146148-290042051_86217-574156500_1579697254-GB-M-029 is -2.82198 over 744 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-001 WHERE SHOULD WE RUN TO 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-001 is -4.56374 over 138 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-002 WE GOT THE WORLD IN OUR HANDS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-002 is -4.68991 over 210 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-004 THEY SAY WE'RE WASTED BUT HOW CAN WE WASTE IT IF WE'RE LOVING EVERY DAY OKAY I GOT THE KEYS TO THE WITH GET WHEN THE 'CAUSE I GOT THE KEYS TO 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-004 is -4.89254 over 1313 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-020 HEY MAMA DON'T STRESS YOUR MIND WE COMING HOME TONIGHT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-020 is -4.94597 over 442 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-024 WE'LL BE BACK IN THE MORNING WHEN THE SUN STARTS TO RISE SO MAMA DON'T STRESS YOUR MIND SO MAMA DON'T STRESS YOUR MIND 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-024 is -4.48173 over 860 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-029 MAMA MAMA MAMA HEY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-029 is -4.32702 over 219 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-031 MAMA MAMA MAMA HEY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-031 is -4.30813 over 224 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-033 WE COMING HOME TONIGHT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-033 is -4.57283 over 233 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-044 TO WE COMING WISHING THAT WE DONE MORE I WANNA LIVE FAST NEVER LOOK BACK THAT'S WHAT BEFORE DON'T WANNA WAKE UP ONE DAY WONDERING WHERE'D IT ALL ME OH BEFORE WE KNOW I WANNA HEAR YOU SING THEY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-044 is -4.94085 over 1922 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-055 HEY MAMA BE YOU'RE I'M DRY TO RISE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-055 is -5.09038 over 393 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-058 WHEN THE SUN STARTS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-058 is -4.69236 over 124 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-059 SO MAMA DON'T STRESS YOUR MIND 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-059 is -4.64687 over 186 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-062 HEY MAMA DON'T STRESS YOUR MIND 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-062 is -4.94093 over 232 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-064 HEY MAMA BE ALRIGHT DRY THE MORNING 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-064 is -5.14401 over 368 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-068 SO MAMA DON'T STRESS YOUR MIND SO MAMA DON'T STRESS YOUR MIND 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-068 is -4.51042 over 422 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-071 MAMA MAMA MAMA HEY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-071 is -4.35568 over 227 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-072 WE COMING HOME TONIGHT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-072 is -4.53747 over 225 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-073 MAMA MAMA MAMA HEY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-073 is -4.38819 over 294 frames.
+M585274004-3259626_3259626-1021280177_1560684514-GB-M-074 WE COMING HOME TONIGHT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M585274004-3259626_3259626-1021280177_1560684514-GB-M-074 is -4.7428 over 241 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-003 TASTED THE SWEET PERFUME OF THE MOUNTAIN GRASS I ROLLED DOWN I WAS YOUNGER 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-003 is -4.32043 over 819 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-005 TAKE ME BACK TO WHEN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-005 is -4.26651 over 169 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-008 DOWN NOT SEEN THE ROARING FIELDS IN SO LONG I KNOW I'VE GROWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-008 is -3.83295 over 634 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-010 AND I'VE MORE MY TO THEN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-010 is -4.35101 over 228 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-011 DRIVING AT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-011 is -3.98201 over 162 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-012 NINETY DOWN THOSE COUNTRY LANES SINGING TO <UNK> DOWN AND I MISS THE THIS THE WAY YOU MAKE ME FEEL AND IT'S REAL WHEN WE WATCHED THE SUNSET OVER THE CASTLE ON THE HILL 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-012 is -4.2126 over 2324 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-016 FIFTEEN YEARS OLD AND SMOKING HAND ROLLED CIGARETTES RUNNING FROM THE LAW THROUGH THE BACK TO <UNK> AND GETTING DRUNK WITH MY FRIENDS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-016 is -4.48113 over 1187 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-021 TAKE ME BACK TO WHEN WE FOUND WEEKEND JOBS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-021 is -4.31156 over 525 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-022 WE GOT PAID WE'D BUY CHEAP SPIRITS AND DRINK THEM STRAIGHT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-022 is -4.30397 over 471 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-025 I WAIT TO GO HOME I'M ON MY WAY DRIVING AT NINETY DOWN THOSE COUNTRY LANES SINGING TO <UNK> AND I MISS THE WAY YOU MAKE ME FEEL AND IT'S REAL WHEN WE WATCHED THE SUNSET OVER THE CASTLE ON THE HILL THE CASTLE ON THE HILL OVER THE CASTLE ON THE HILL AS I'M ON THE HILL 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-025 is -4.1972 over 4511 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-035 TO KIDS BUT LIVES ALONE ONE'S BROTHER OVERDOSED 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-035 is -4.14988 over 616 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-039 THESE PEOPLE RAISED ME AND I CAN'T WAIT TO GO HOME AND I'M ON MY WAY I STILL REAL WHEN MY LOVE THESE OLD COUNTRY LANES 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-039 is -3.96875 over 1568 frames.
+M592696098-3770560_3770560-998033126_1611580067-GB-M-043 NOW IS THE WAY YOU MAKE ME FEEL AND IT'S REAL WHEN WE WATCHED THE SUNSET OVER THE CASTLE ON THE HILL THE CASTLE ON OVER THE CASTLE ON THE HILL THE HILL OVER THE THE CASTLE ON 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M592696098-3770560_3770560-998033126_1611580067-GB-M-043 is -4.21262 over 2851 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-001 SPEND ALL YOUR TIME WAITING 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-001 is -4.00774 over 291 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-002 FOR THAT SECOND CHANCE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-002 is -4.69004 over 135 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-003 FOR A BREAK THAT WOULD MAKE IT OKAY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-003 is -4.13187 over 378 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-004 THERE'S ALWAYS SOME REASON 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-004 is -3.96014 over 272 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-005 TO FEEL NOT GOOD ENOUGH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-005 is -4.46869 over 184 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-007 AND IT'S HARD AND THE END OF THE DAY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-007 is -3.78684 over 394 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-008 I NEED SOME DISTRACTION 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-008 is -4.35899 over 268 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-009 OH BEAUTIFUL RELEASE MEMORY SEE FROM MY VEINS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-009 is -4.01212 over 754 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-011 LET ME BE EMPTY AND LET AS AND MAYBE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-011 is -4.10572 over 703 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-014 FIND SOME PEACE TONIGHT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-014 is -3.8216 over 397 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-015 IN THE ARMS OF OF AN ANGEL 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-015 is -3.02026 over 475 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-016 FLY AWAY FROM HERE FROM THIS DARK COLD HOTEL ROOM 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-016 is -3.0084 over 1132 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-018 AND THE <UNK> AND THERE'S TO THERE'S BACK 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-018 is -4.00903 over 317 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-019 YOU FEAR THE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-019 is -3.98692 over 152 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-020 YOU ARE PULLED FROM THE WRECKAGE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-020 is -3.07548 over 480 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-021 OF YOUR SILENT REVERIE YOU'RE IN THE YOU'RE IN THE THE ARMS OF THE ANGEL MAY YOU FIND SOME SOME COMFORT HERE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-021 is -3.08811 over 2182 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-025 TIRED OF THE STRAIGHT LINES AND EVERYWHERE YOU TURN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-025 is -4.17982 over 580 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-027 THERE'S VULTURES AND THIEVES AT YOUR BACK 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-027 is -3.95682 over 395 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-029 GO KEEPS ON TWISTING 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-029 is -4.30007 over 234 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-030 YOU KEEP ON BUILDING LIES 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-030 is -4.14769 over 279 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-031 THAT MAKE UP FOR ALL THAT YOU LACK 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-031 is -3.79458 over 394 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-032 YOU MAKE NO DIFFERENCE ESCAPING ONE LAST TIME 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-032 is -4.44221 over 563 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-034 IT'S EASIER TO BELIEVE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-034 is -3.09482 over 382 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-035 IN THIS SWEET MADNESS OH THIS GLORIOUS SADNESS 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-035 is -3.82743 over 666 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-038 BRINGS ME TO MY KNEES IN THE ARMS OF OF THE ANGEL 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-038 is -3.05917 over 1021 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-040 FLY FROM HERE FROM THIS DARK COLD HOTEL ROOM 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-040 is -2.95444 over 1138 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-042 AND THE <UNK> AND THE STORM THERE'S THAT YOU FEAR THE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-042 is -4.0885 over 520 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-043 YOU ARE PULLED FROM THE WRECKAGE OF YOUR SILENT REVERIE YOU'RE IN THE YOU'RE IN THE ARMS OF THE ANGEL 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-043 is -3.38225 over 1771 frames.
+M610512636-804853875_1026743-610507940_1617293426-GB-M-046 MAY YOU FIND SOME COMFORT HERE YOU'RE IN THE ARMS OF THE ANGEL MAY YOU FIND SOME COMFORT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M610512636-804853875_1026743-610507940_1617293426-GB-M-046 is -2.99235 over 2626 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-001 CRASHING HIT A WALL 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-001 is -4.26235 over 283 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-002 RIGHT NOW I NEED A MIRACLE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-002 is -4.48632 over 268 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-003 HURRY UP NOW I NEED A MIRACLE STRANDED REACHING OUT I CALL YOUR NAME BUT YOU'RE NOT AROUND I NEED BUT YOU'RE NOT AROUND 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-003 is -4.5051 over 1592 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-007 I NEED YOU I NEED YOU I NEED YOU RIGHT NOW 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-007 is -4.12288 over 349 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-008 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-008 is -4.77162 over 218 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-009 SO DON'T LET ME DON'T LET ME DON'T LET ME DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-009 is -4.25276 over 353 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-010 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-010 is -4.95449 over 308 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-012 I HOPE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-012 is -4.85354 over 118 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-013 BE HERE SO 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-013 is -4.84444 over 331 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-014 DON'T LET ME DON'T LET ME DON'T LET ME DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-014 is -4.5079 over 336 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-015 DON'T LET ME DOWN DON'T LET ME DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-015 is -4.47572 over 573 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-016 ME DOWN DOWN DOWN DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-016 is -4.45247 over 423 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-017 LET ME DOWN DOWN I REALLY THOUGHT YOU WERE ON MY SIDE BUT ON MY SIDE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-017 is -4.44536 over 1464 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-022 I NEED YOU I NEED YOU I NEED YOU RIGHT NOW 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-022 is -4.36487 over 582 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-024 DON'T LET ME DON'T LET ME DON'T LET ME DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-024 is -4.52997 over 686 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-027 HOPE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-027 is -4.78857 over 125 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-028 THAT YOU'LL BE HERE I NEED MOST SO DON'T LET ME DON'T LET ME DON'T LET ME DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-028 is -4.69448 over 701 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-030 DON'T LET ME DOWN DON'T LET ME DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-030 is -4.32354 over 587 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-031 DON'T LET ME DOWN DOWN DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-031 is -3.59175 over 395 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-032 DON'T LET ME DOWN DOWN DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-032 is -3.54931 over 431 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-033 DON'T LET ME DOWN DOWN DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-033 is -3.40136 over 416 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-034 ME DOWN DON'T LET ME DOWN DOWN DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-034 is -4.46976 over 626 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-036 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-036 is -5.27455 over 561 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-037 YEAH DO YEAH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-037 is -4.97215 over 652 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-038 YOUR I NEED YOU I NEED YOU DON'T LET ME DON'T LET ME DON'T LET ME DOWN NOW 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-038 is -4.35594 over 573 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-041 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-041 is -5.06281 over 331 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-043 I HOPE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-043 is -4.80983 over 128 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-044 THAT YOU'LL BE HERE NEED YOU THE MOST SO 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-044 is -4.89235 over 354 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-045 DON'T LET ME DON'T LET ME DOWN DON'T LET ME DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-045 is -4.42612 over 784 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-047 YEAH DON'T YEAH DON'T LET ME DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-047 is -3.81711 over 1067 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-049 DON'T LET ME DOWN ON OH YEAH DON'T LET ME DOWN DON'T LET ME DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-049 is -4.02939 over 1021 frames.
+M616900391-3771856_3771856-274579949_1525257248-GB-M-052 DON'T LET ME DOWN DOWN DOWN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M616900391-3771856_3771856-274579949_1525257248-GB-M-052 is -3.55001 over 462 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-004 FEEL LIKE I'VE BEEN LOCKED IN TIGHT FOR A CENTURY OF LONELY NIGHTS WAITING FOR SOMEONE TO RELEASE ME 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-004 is -4.47829 over 780 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-007 THINKING OF RAIN BLOWING KISSES MY WAY THAT DON'T MEAN I'M GONNA HEAR WHAT YOU SAY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-007 is -4.44842 over 433 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-011 BABY BABY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-011 is -3.80872 over 148 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-012 OH WOAH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-012 is -2.41511 over 309 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-014 OH WOAH WOAH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-014 is -2.68068 over 277 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-027 I'M A GENIE IN A BOTTLE BABY COME COME COME AND LET ME OUT THE ME 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-027 is -4.8202 over 475 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-031 THE LIGHTS DOWN LOW JUST ONE MORE DANCE AND THEN WE'RE GOOD 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-031 is -4.77173 over 300 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-034 YOUR WAITING FOR SOMEONE WHO GETS ME 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-034 is -4.59243 over 410 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-035 HEART IS RACING AT THE SPEED OF LIGHT LET'S GO AND HAVE A LITTLE FUN TONIGHT BABY BABY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-035 is -4.2422 over 599 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-040 MY MIND IS SAYING LET'S GO OH WOAH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-040 is -4.50405 over 147 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-043 BUT MY HEART IS SAYING NO 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-043 is -4.85372 over 130 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-052 I'M A GENIE IN A BOTTLE BABY GOTTA CATCH ME THE RIGHT WAY HONEY I'M A GENIE IN A BOTTLE BABY COME COME COME AND LET ME OUT I'M A GENIE IN A BOTTLE BABY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-052 is -4.33794 over 1098 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-058 GOTTA CATCH ME THE RIGHT WAY HONEY I'M 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-058 is -4.44507 over 194 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-062 OH WOAH WOAH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-062 is -2.73395 over 267 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-064 OH WOAH WOAH 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-064 is -2.48128 over 279 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-067 IF YOU WANNA BE WITH ME BABY THERE'S A PRICE TO PAY I'M A GENIE IN A BOTTLE YOU GOTTA ASK ME THE RIGHT WAY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-067 is -4.03591 over 908 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-071 IF YOU WANNA BE WITH ME I CAN MAKE YOUR WISH COME TRUE 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-071 is -4.1504 over 429 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-073 JUST COME AND SET ME FREE BABY AND I'LL BE WITH YOU I'M A GENIE IN A BOTTLE BABY GOTTA CATCH ME THE RIGHT WAY HONEY I'M A GENIE IN A BOTTLE BABY COME COME COME AND LET ME OUT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-073 is -4.27839 over 1322 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-083 I'M A GENIE IN A BOTTLE BABY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-083 is -4.11129 over 193 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-085 COME COME COME AND LET ME OUT 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-085 is -4.00856 over 216 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-086 I'M A GENIE IN A BOTTLE BABY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-086 is -4.17593 over 199 frames.
+M619549202-514669237_483915-1193651801_1572308845-GB-M-087 I'M A GENIE IN A BOTTLE BABY 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M619549202-514669237_483915-1193651801_1572308845-GB-M-087 is -4.26478 over 214 frames.
+M637574978-3770789_3770789-752304950_1587583973-GB-M-006 AND CHASE AFTER IN KICK IT WITH WHO AND FOR IT WITH ON IN A 'CAUSE THEY'D ON IF I WERE A BOY I THINK I WOULD UNDERSTAND HOW IT FEELS TO LOVE A GIRL I'D SWEAR I'D I'D BE A BETTER MAN I'D SWEAR I'D LISTEN TO NO 'CAUSE I KNOW WHEN LOVE AND WHEN YOU LOSE THE ONE YOU WANTED 'CAUSE TAKING YOU FOR GRANTED AND EVERYTHING YOU HAD GOT DESTROYED IF I WERE A BOY I WOULD TURN ON A AND CHASE KNOW HOW IT 'CAUSE AND IN A I'D PUT MYSELF FIRST 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.480~1-09abd]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (34416448,359264,15311544), after rebuilding, repo size was 25064064, effective beam was 5.7182 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:277) Determinization finished earlier than the beam for utterance M637574978-3770789_3770789-752304950_1587583973-GB-M-006
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M637574978-3770789_3770789-752304950_1587583973-GB-M-006 is -4.35079 over 8492 frames.
+LOG (apply-cmvn[5.5.480~1-09abd]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 228 utterances, errors on 0
+M637574978-3770789_3770789-752304950_1587583973-GB-M-021 AND MAKE THE RULES AS I IN 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M637574978-3770789_3770789-752304950_1587583973-GB-M-021 is -4.6965 over 692 frames.
+M637574978-3770789_3770789-752304950_1587583973-GB-M-022 'CAUSE I KNOW THAT SHE'D BE FAITHFUL WAITING FOR ME TO COME HOME TO COME HOME 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M637574978-3770789_3770789-752304950_1587583973-GB-M-022 is -4.56314 over 956 frames.
+LOG (transform-feats[5.5.480~1-09abd]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -88.6872 over 175690 frames.
+LOG (transform-feats[5.5.480~1-09abd]:main():transform-feats.cc:161) Applied transform to 228 utterances; 0 had errors.
+M637574978-3770789_3770789-752304950_1587583973-GB-M-025 IF I WERE A BOY I THINK I COULD UNDERSTAND OH OOH HOW IT FEELS TO LOVE A GIRL I'D SWEAR I'D BE A BETTER MAN I'D LISTEN TO COME ALL LISTEN TO THE LOSE THE AS I KNOW HOW IT THE A MY WHEN YOU LOSE THE ONE YOU WANTED 'CAUSE HE'S TAKING YOU FOR GRANTED AND DESTROYED AND MAKE THINK I'D LISTEN TO FOR IT'S A LITTLE TOO LATE JUST YOU'RE COME BACK SAY IT'S I'D JUST I'M JUST IN BUT THERE'S I WOULD WAIT FOR YOU BUT IT'S JUST A ALL 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M637574978-3770789_3770789-752304950_1587583973-GB-M-025 is -4.17587 over 6489 frames.
+LOG (transform-feats[5.5.480~1-09abd]:main():transform-feats.cc:158) Overall average logdet is 4.21889 over 175690 frames.
+LOG (transform-feats[5.5.480~1-09abd]:main():transform-feats.cc:161) Applied transform to 228 utterances; 0 had errors.
+M637574978-3770789_3770789-752304950_1587583973-GB-M-040 JUST A IN DON'T TIME IN OH HOW IT FEELS TO LOVE A GIRL SOME DAY YOU'LL WISH YOU WERE A BETTER MAN GIRL YOU DON'T YOU YOU'LL DON'T LISTEN TO LOVE A A YOU DON'T CARE HOW IT HURTS UNTIL YOU LOSE THE ONE YOU WANTED TAKEN HER FOR GRANTED AND EVERYTHING YOU GOT DESTROYED BUT YOU'RE JUST A BOY BUT WAS TO LOVE A WILL YOU 
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance M637574978-3770789_3770789-752304950_1587583973-GB-M-040 is -4.45987 over 5340 frames.
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:main():gmm-latgen-faster.cc:176) Time taken 510.492s: real-time factor assuming 100 frames/sec is 0.290564
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:main():gmm-latgen-faster.cc:179) Done 228 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.480~1-09abd]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -4.20787 over 175690 frames.
+# Accounting: time=510 threads=1
+# Ended (code 0) at Tue Sep 10 14:58:35 BST 2019, elapsed time 510 seconds

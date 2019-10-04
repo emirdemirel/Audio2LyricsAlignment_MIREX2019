@@ -1,0 +1,27 @@
+# utils/sym2int.pl --map-oov 239 -f 2- data/lang/words.txt exp/tri3b_cleaned/graphs/texts/text.32 | steps/cleanup/make_biased_lms.py --min-words-per-graph=100 "--lm-opts=--word-disambig-symbol=26646 --ngram-order=4 --min-lm-state-count=10 --discounting-constant=0.3 --top-words=exp/tri3b_cleaned/graphs/top_words.int" exp/tri3b_cleaned/graphs/fsts/utt2group.32 | compile-train-graphs-fsts --transition-scale=1.0 --self-loop-scale=0.1 --read-disambig-syms=data/lang/phones/disambig.int /home/emir/QMUL/gitRepos/kaldi/egs/Kaldi-Dsing-task/s5/exp/tri3b_cleaned/tree /home/emir/QMUL/gitRepos/kaldi/egs/Kaldi-Dsing-task/s5/exp/tri3b_cleaned/final.mdl data/lang/L_disambig.fst ark:- ark,scp:exp/tri3b_cleaned/graphs/fsts/HCLG.fsts.32.ark,exp/tri3b_cleaned/graphs/fsts/HCLG.fsts.32.scp 
+# Started at Tue Sep 10 13:53:08 BST 2019
+#
+compile-train-graphs-fsts --transition-scale=1.0 --self-loop-scale=0.1 --read-disambig-syms=data/lang/phones/disambig.int /home/emir/QMUL/gitRepos/kaldi/egs/Kaldi-Dsing-task/s5/exp/tri3b_cleaned/tree /home/emir/QMUL/gitRepos/kaldi/egs/Kaldi-Dsing-task/s5/exp/tri3b_cleaned/final.mdl data/lang/L_disambig.fst ark:- ark,scp:exp/tri3b_cleaned/graphs/fsts/HCLG.fsts.32.ark,exp/tri3b_cleaned/graphs/fsts/HCLG.fsts.32.scp 
+sym2int.pl: replacing AAA with 239
+sym2int.pl: replacing HAAA with 239
+sym2int.pl: replacing HOOO with 239
+sym2int.pl: replacing WOOOAAAH with 239
+sym2int.pl: replacing 16 with 239
+sym2int.pl: replacing LAMPPOST with 239
+sym2int.pl: replacing UUUH with 239
+sym2int.pl: replacing UUUH with 239
+sym2int.pl: replacing UUUH with 239
+sym2int.pl: replacing OVERTHREW with 239
+sym2int.pl: replacing SYNCHRONIZATION with 239
+sym2int.pl: replacing OOOOOH with 239
+sym2int.pl: replacing OOOOOH with 239
+sym2int.pl: replacing BACKLESS with 239
+sym2int.pl: replacing OOOOOH with 239
+sym2int.pl: replacing OOOOOH with 239
+sym2int.pl: replacing OOOOOH with 239
+sym2int.pl: replacing OOOOOH with 239
+sym2int.pl: replacing OOOOOH with 239
+** Replaced 19 instances of OOVs with 239
+LOG (compile-train-graphs-fsts[5.5.480~1-09abd]:main():compile-train-graphs-fsts.cc:160) compile-train-graphs: succeeded for 21 graphs, failed for 0
+# Accounting: time=7 threads=1
+# Ended (code 0) at Tue Sep 10 13:53:15 BST 2019, elapsed time 7 seconds

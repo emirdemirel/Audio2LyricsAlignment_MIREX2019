@@ -1,0 +1,50 @@
+# steps/cleanup/internal/modify_ctm_edits.py --verbose=3 exp/tri3b_cleaned/non_scored_words.txt exp/tri3b_cleaned/lattice_oracle/ctm_edits exp/tri3b_cleaned/ctm_edits.modified 
+# Started at Tue Sep 10 15:05:15 BST 2019
+#
+modify_ctm_edits.py: processed 124085 lines of ctm (11.54% of which incorrect), of which 36 were changed fixing the reference for non-scored words (0.03% of lines, or 0.25% of incorrect lines)
+
+modify_ctm_edits.py: processed 124085 lines of ctm (11.54% of which incorrect), of which 164 were changed fixing the reference for repetitions (0.13% of lines, or 1.15% of incorrect lines)
+modify_ctm_edits.py: most common repetitions inserted into reference (as percentages of all words fixed in this way) are:
+YOU [7.93%]
+TO [4.88%]
+I [4.27%]
+WHEN [3.05%]
+FOR [2.44%]
+I'LL WAIT [2.44%]
+DUM [2.44%]
+THE CHANDELIER [2.44%]
+MOUNTAINS [2.44%]
+I'M [1.83%]
+MY [1.83%]
+ME [1.83%]
+SOME [1.83%]
+SING [1.83%]
+I'VE [1.22%]
+YOU GOT [1.22%]
+IS [1.22%]
+YOU CALL [1.22%]
+OH [1.22%]
+DON'T [1.22%]
+NO [1.22%]
+THAT [1.22%]
+HALLELUJAH [1.22%]
+TO LIFE [1.22%]
+YEAH [1.22%]
+BIKE [1.22%]
+PURPLE RAIN [1.22%]
+THE ONE [1.22%]
+THE [1.22%]
+COME ON [1.22%]
+I NEED [1.22%]
+I KEEP [1.22%]
+KEEP ON [1.22%]
+THE HILL [1.22%]
+I BEG [1.22%]
+THEN A [1.22%]
+LOVE [0.61%]
+BUT [0.61%]
+REGRETS [0.61%]
+NOT [0.61%]
+...
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue Sep 10 15:05:15 BST 2019, elapsed time 0 seconds
