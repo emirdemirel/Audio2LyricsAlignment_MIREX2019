@@ -11,7 +11,7 @@
 
 #nj=20
 nj=1
-stage=4
+stage=0
 
 
 
