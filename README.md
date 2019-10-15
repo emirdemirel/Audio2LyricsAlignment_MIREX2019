@@ -85,7 +85,10 @@ where ``` j ``` indicates number of jobs in parallel.
   
 
 ## How to run
-
+First, export the path of your Kaldi Toolkit installation by running the line below with your own kaldi path. (If you don't want to do this each time you start working in repository, copy the line below and add it on the top line in ``` path.sh ``` .)
+```
+export KALDI_ROOT=/path/to/kaldi
+```
 Run the following python script in this repository for generating the word-level alignments for the Hansen Dataset
 
 ```
