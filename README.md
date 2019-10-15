@@ -61,6 +61,9 @@ and see if there are any system-level installations you need to do
    ```
 where ``` j ``` indicates number of jobs in parallel.
 
+  - NOTE : At this stage, you may need to install other external packages required by Kaldi, like ``` srilm``` and ``` phonetisaurus```. For that, run below lines:
+       - For SRILM: ``` extras/install_srilm.sh```
+       - For Phonetisaurus ```extras/install_phonetisaurus.sh ```
   - When this is complete, navigate to ``` /src ``` from the main directory of Kaldi. Then run
   ```
   ./configure --shared
