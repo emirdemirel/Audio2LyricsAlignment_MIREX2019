@@ -63,7 +63,7 @@ if [[ $stage -le 0 ]]; then
     #python3 local/prepare_data_hansen.py $rec_path $lyrics_path $testset data
   #else
     #python3 local/prepare_data_general.py $rec_path $lyrics_path $testset data
-  3fi
+  #fi
   
 fi
 
