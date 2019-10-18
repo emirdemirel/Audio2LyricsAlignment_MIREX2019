@@ -9,7 +9,7 @@
 nj=1
 stage=0
 
-source 
+source "Audio2Lyrics/bin/activate"
 
 if [ $# != 4 ]; then
    echo "Usage: $0 [options] <rec_path> <lyrics_path> <out_dir> <db_name>"
