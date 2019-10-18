@@ -59,7 +59,7 @@ echo "---- DATASET : $testset ----"
 if [[ $stage -le 0 ]]; then
 
   if  [ "$testset" == 'hansen' ]; then
-    python local/prepare_data_hansen.py $testset data ${db_path}
+    python3 local/prepare_data_hansen.py $testset data ${db_path}
   else
     python3 local/prepare_data_general.py $rec_path $lyrics_path $testset data
   fi
@@ -115,8 +115,8 @@ if [[ $stage -le 4 ]]; then
 
   echo "Split alignments per recording -> Convert phonemes to words -> Reformat timestamps"
   if [ "$testset" == 'hansen' ]; then
-    python local/alignment2words_hansen.py $ali_dir $save_dir $segments_path $lexicon_path
+    python3 local/alignment2words_hansen.py $ali_dir $save_dir $segments_path $lexicon_path
   else
-    python local/alignment2words_general.py $ali_dir $save_dir $segments_path $lexicon_path
+    python3 local/alignment2words_general.py $ali_dir $save_dir $segments_path $lexicon_path
   fi
 fi
