@@ -59,7 +59,7 @@ echo "---- DATASET : $testset ----"
 if [[ $stage -le 0 ]]; then
 
   if  [ "$testset" == 'hansen' ]; then
-    python3 local/prepare_data_hansen.py $testset data ${db_path}
+    python3 local/prepare_data_hansen.py $rec_path $lyrics_path $testset data
   else
     python3 local/prepare_data_general.py $rec_path $lyrics_path $testset data
   fi
