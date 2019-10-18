@@ -89,13 +89,13 @@ if [[ $stage -le 3 ]]; then
 
     #steps/align_si.sh --nj $nj --cmd "$train_cmd"  \
      #data/${testset} data/lang exp/tri3b exp/tri3_ali_${testset}
-  if [ "$testset" == 'hansen' ]; then
-    steps/align_fmllr.sh  --cmd "$train_cmd" \
-     data/${testset} data/lang exp/tri3b_cleaned exp/tri3b_fmllr_ali_cleaned_${testset} || exit 1;
-  else
-    local/align_fmllr_mirex.sh  --cmd "$train_cmd" \
-     data/${testset} data/lang exp/tri3b_cleaned exp/tri3b_fmllr_ali_cleaned_${testset} || exit 1;
-  fi      
+  #if [ "$testset" == 'hansen' ]; then
+    #steps/align_fmllr.sh  --cmd "$train_cmd" \
+     #data/${testset} data/lang exp/tri3b_cleaned exp/tri3b_fmllr_ali_cleaned_${testset} || exit 1;
+  #else
+  local/align_fmllr_mirex.sh  --cmd "$train_cmd" \
+    data/${testset} data/lang exp/tri3b_cleaned exp/tri3b_fmllr_ali_cleaned_${testset} || exit 1;
+  #fi      
 fi
 
 #Format Alignments (Phonemes -> Pronunciation -> Words)
