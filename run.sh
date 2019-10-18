@@ -1,10 +1,6 @@
 #!/bin/bash
 #
-# Recipe for the Dsing baseline
-# Based mostly on the Librispeech recipe
-#
-# Copyright 2019  Gerardo Roa
-#                 University of Sheffield
+
 # Apache 2.0
 
 # Begin configuration section
@@ -13,7 +9,7 @@
 nj=1
 stage=0
 
-
+source 
 
 if [ $# != 4 ]; then
    echo "Usage: $0 [options] <rec_path> <lyrics_path> <out_dir> <db_name>"
@@ -63,7 +59,7 @@ echo "---- DATASET : $testset ----"
 if [[ $stage -le 0 ]]; then
 
   if  [ "$testset" == 'hansen' ]; then
-    python local/prepare_dataset_hansen.py $testset data ${db_path}
+    python local/prepare_data_hansen.py $testset data ${db_path}
   else
     python3 local/prepare_data_general.py $rec_path $lyrics_path $testset data
   fi
