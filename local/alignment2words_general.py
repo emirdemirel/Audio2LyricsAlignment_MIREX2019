@@ -116,7 +116,6 @@ def pron2word(rec_id, prons_list, lexicon, save_dir,text_path):
     for i in range(len(text)):
         data_lexicon.append(text.iloc[i][0][1].split(' '))
     data_lexicon = list(dict.fromkeys(list(itertools.chain.from_iterable(data_lexicon))))
-    print(data_lexicon)
     for line in prons_list:
         line = line.strip()
         prons = line.split(" ")[:-2]
@@ -127,9 +126,7 @@ def pron2word(rec_id, prons_list, lexicon, save_dir,text_path):
                 # look up the word from the pronunciation in the dictionary
             word_candidates = lexicon.get(prons)
             for w in word_candidates:
-                #print(w)
                 #w = w.replace('"',"").replace("'","").replace('u',"")
-                print(w)
                 if w in data_lexicon:
                     word = w
             start = line.split(" ")[-2]
