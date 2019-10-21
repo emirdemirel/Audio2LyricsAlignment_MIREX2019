@@ -56,15 +56,10 @@ echo; echo "===== Starting at  $(date +"%D_%T") ====="; echo
 
 echo "---- DATASET : $testset ----"
 
-if [[ $stage -le 0 ]]; then
+if [[ $stage -le 1 ]]; then
 
   python3 local/prepare_data_general.py $rec_path $lyrics_path $testset data
-  #if  [ "$testset" == 'hansen' ]; then
-    #python3 local/prepare_data_hansen.py $rec_path $lyrics_path $testset data
-  #else
-    #python3 local/prepare_data_general.py $rec_path $lyrics_path $testset data
-  #fi
-  
+
 fi
 
 
@@ -87,15 +82,9 @@ fi
 #Forced Alignment
 if [[ $stage -le 3 ]]; then
 
-    #steps/align_si.sh --nj $nj --cmd "$train_cmd"  \
-     #data/${testset} data/lang exp/tri3b exp/tri3_ali_${testset}
-  #if [ "$testset" == 'hansen' ]; then
-    #steps/align_fmllr.sh  --cmd "$train_cmd" \
-     #data/${testset} data/lang exp/tri3b_cleaned exp/tri3b_fmllr_ali_cleaned_${testset} || exit 1;
-  #else
   local/align_fmllr_mirex.sh  --cmd "$train_cmd" \
     data/${testset} data/lang exp/tri3b_cleaned exp/tri3b_fmllr_ali_cleaned_${testset} || exit 1;
-  #fi      
+
 fi
 
 #Format Alignments (Phonemes -> Pronunciation -> Words)
@@ -116,9 +105,5 @@ if [[ $stage -le 4 ]]; then
 
   echo "Split alignments per recording -> Convert phonemes to words -> Reformat timestamps"
   python3 local/alignment2words_general.py $ali_dir $save_dir $segments_path $lexicon_path
-  #if [ "$testset" == 'hansen' ]; then
-    #python3 local/alignment2words_hansen.py $ali_dir $save_dir $segments_path $lexicon_path
-  #else
-    #python3 local/alignment2words_general.py $ali_dir $save_dir $segments_path $lexicon_path
-  #fi
+
 fi

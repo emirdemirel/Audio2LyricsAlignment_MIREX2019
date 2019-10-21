@@ -54,9 +54,6 @@ class Recording:
                         text = text + ' ' + words_split[i]
         text = text[1:].upper()
         
-        #silence_threshold = 23.8 #TODO - Test with multiple files, make it parametric based on recording dBFS
-        #start, end = self._retrieve_vocal_segment(silence_threshold) # --> TODO - activate this line after implementing source separation
-        
         start= 0.00
         end = self._get_duration()
         
@@ -74,10 +71,10 @@ class Recording:
         return len(audio)/1000 #from ms to sec
         
     def _retrieve_vocal_segment(self, silence_threshold):
-        
-        ### TODO ---> add source separation part
-        ### Source Separation - Vocals only
-        ### This is done to segment vocal part from the original recording to improve alignment performance
+
+	# This function is written for retrieving the start and end times of the vocal segment in the full songs
+        # using an open-source source separation algorithm. 
+        # It will be used in the later versions of the alignment toolkit! 
 
         print('Separating Vocals from Original Audio to Retrieve Vocal Segment')
         
@@ -91,7 +88,6 @@ class Recording:
         separeted_vocals_path = join(output_ss,filename_separated)
    
         ### Segment vocal parts
-
         recording = AudioSegment.from_file(separeted_vocals_path,format='wav', frame_rate = sample_rate)
 
         nonsil_segments = detect_nonsilent(recording,silence_thresh=silence_threshold)
@@ -141,10 +137,8 @@ def main(args):
     lyrics_path = args.lyrics_path
     workspace = args.workspace
     name = args.name
-    #acapella = args.acappella
-    print(rec_path)
     filename = rec_path.split('/')[-1]
-    print(filename)
+
     recording = Recording(rec_path,lyrics_path,workspace,name)
     recording.add_utterance(filename)
     recording.save()
@@ -157,7 +151,6 @@ if __name__ == '__main__':
     parser.add_argument("lyrics_path", type=str, help="Path to lyrics file")
     parser.add_argument("name", type=str, help="name of the dataset", default ="hansen")
     parser.add_argument("workspace", type=str, help="Path where the output files will be saved", default ="data")
-    #parser.add_argument("acappella", type=str, help="Set true to align acappella recordings", default=True)
 
     args = parser.parse_args()
     main(args)
