@@ -54,10 +54,17 @@ mfccdir="mfcc_"$testset
 
 echo; echo "===== Starting at  $(date +"%D_%T") ====="; echo
 
+echo "============================="
 echo "---- DATASET : $testset ----"
+echo "============================="
 
 if [[ $stage -le 1 ]]; then
 
+  echo
+  echo "============================="
+  echo "---- DATA PREPARATION ----"
+  echo "============================="
+  echo
   python3 local/prepare_data_general.py $rec_path $lyrics_path $testset data
 
 fi
@@ -69,7 +76,8 @@ if [[ $stage -le 2 ]]; then
   echo
   echo "============================="
   echo "---- MFCC FEATURES EXTRACTION ----"
-  echo "=====  $(date +"%D_%T") ====="
+  echo "============================="
+  echo
 
   for datadir in $testset; do
     utils/fix_data_dir.sh data/$datadir
@@ -82,6 +90,12 @@ fi
 #Forced Alignment
 if [[ $stage -le 3 ]]; then
 
+  echo
+  echo "============================="
+  echo "---- ALIGNMENT ----"
+  echo "============================="
+  echo
+
   local/align_fmllr_mirex.sh  --cmd "$train_cmd" \
     data/${testset} data/lang exp/tri3b_cleaned exp/tri3b_fmllr_ali_cleaned_${testset} || exit 1;
 
@@ -89,6 +103,12 @@ fi
 
 #Format Alignments (Phonemes -> Pronunciation -> Words)
 if [[ $stage -le 4 ]]; then
+
+  echo
+  echo "============================="
+  echo "---- POST-PROCESS & REFORMAT DATA ----"
+  echo "============================="
+  echo
 
   [ -d $out_dir ] || mkdir "$out_dir"
   save_dir=$out_dir/${testset}
