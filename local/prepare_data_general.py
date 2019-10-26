@@ -13,7 +13,7 @@ from pydub.silence import detect_nonsilent
 
 
 class Recording:
-    def __init__(self, rec_path, lyrics_path, workspace, name):
+    def __init__(self, rec_path, lyrics_path, output_dir, name):
         self.segments = []
         self.spk2gender = []
         self.text = []
@@ -21,8 +21,7 @@ class Recording:
         self.wavscp = []
         self.rec_path = rec_path
         self.lyrics_path = lyrics_path
-        self.workspace = workspace
-        self.out_dir = join('data',name)
+        self.out_dir = output_dir
         self.regex = re.compile("[^a-zA-Z']")
         self.dataset_name = name
 
@@ -57,7 +56,7 @@ class Recording:
         start= 0.00
         end = self._get_duration()
         
-        utt_id = rec_id  # WE DON'T SEGMENT SONGS FOR THE OTHER DATASETS
+        utt_id = rec_id 
 
         self._add_segment(utt_id, rec_id, start, end)
         self._add_spk2gender(spk, gender)
@@ -135,11 +134,11 @@ def main(args):
     
     rec_path = args.rec_path
     lyrics_path = args.lyrics_path
-    workspace = args.workspace
+    output_dir = args.output_dir
     name = args.name
     filename = rec_path.split('/')[-1]
 
-    recording = Recording(rec_path,lyrics_path,workspace,name)
+    recording = Recording(rec_path,lyrics_path,output_dir,name)
     recording.add_utterance(filename)
     recording.save()
         
@@ -150,7 +149,7 @@ if __name__ == '__main__':
     parser.add_argument("rec_path", type=str, help="Path to audio recording")
     parser.add_argument("lyrics_path", type=str, help="Path to lyrics file")
     parser.add_argument("name", type=str, help="name of the dataset", default ="hansen")
-    parser.add_argument("workspace", type=str, help="Path where the output files will be saved", default ="data")
+    parser.add_argument("output_dir", type=str, help="Path where the output files will be saved", default ="data")
 
     args = parser.parse_args()
     main(args)
