@@ -117,7 +117,7 @@ optional arguments:
   -h, --help   show this help message and exit
 
 ```
-   - When the program is executed and completed successfully, the alignments will be stored in ```alignments/$dataset/$rec_id``` directory (where ``` rec_id ``` is the recording ID.
+   - When the program is executed and completed successfully, the alignments will be stored in ```alignments/$dataset/$rec_id``` directory (where ``` rec_id ``` is the recording ID).
 
    - Extracted features are stored in ```mfcc_${dataset}/ ```
 
