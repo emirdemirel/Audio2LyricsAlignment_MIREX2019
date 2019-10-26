@@ -1,11 +1,7 @@
 #!/bin/bash
-#
-
-# Apache 2.0
 
 # Begin configuration section
 
-#nj=20
 nj=1
 stage=0
 
@@ -21,13 +17,12 @@ if [ $# != 4 ]; then
    echo ""
    echo ""
    echo ""
-   echo "main options (for others, see top of script file)"
-   echo "  --stage <stage>                                  # Processing Stage"
-   echo "  --config <config-file>                           # config containing options"
-   echo "  --nj <nj>                                        # number of parallel jobs"
-   echo "  --cmd (utils/run.pl|utils/queue.pl <queue opts>) # how to run jobs."
-   echo "                                                   # from parent dir of <decode-dir>' (opt.)"
-   echo "  --acwt <float>                                   # select acoustic scale for decoding"
+   echo "main options"
+   echo "  <rec_path>                                                 # Path to recording "
+   echo "  <lyrics_path>                                              # Path to Lyrics file"
+   echo "  <out_dir>                                                  # output directory to put final alignments files"
+   echo "  <db_name>                                                   # name of the database"
+   echo ""   
    exit 1;
 fi
 
@@ -35,6 +30,12 @@ rec_path=$1
 lyrics_path=$2
 out_dir=$3
 testset=$4
+
+rec_filename=${rec_path##*/}
+rec_id=${rec_filename%*".wav"}
+#echo $rec_id
+datadir=data/$testset/$rec_id
+
 
 . ./path.sh
 . ./cmd.sh
@@ -50,7 +51,6 @@ set -e
 # CHECK NECESSARY TOOLS - This script also needs the phonetisaurus g2p, srilm, sox
 ./local/check_tools.sh || exit 1
 
-mfccdir="mfcc_"$testset
 
 echo; echo "===== Starting at  $(date +"%D_%T") ====="; echo
 
@@ -65,11 +65,12 @@ if [[ $stage -le 1 ]]; then
   echo "---- DATA PREPARATION ----"
   echo "============================="
   echo
-  python3 local/prepare_data_general.py $rec_path $lyrics_path $testset data
+  python3 local/prepare_data_general.py $rec_path $lyrics_path $testset data/$testset/$rec_id
 
 fi
 
 
+mfccdir="mfcc_${testset}"/$rec_id
 # Features Extraction
 if [[ $stage -le 2 ]]; then
 
@@ -79,13 +80,16 @@ if [[ $stage -le 2 ]]; then
   echo "============================="
   echo
 
-  for datadir in $testset; do
-    utils/fix_data_dir.sh data/$datadir
-    steps/make_mfcc.sh --cmd "$train_cmd" --nj $nj data/${datadir} exp/make_mfcc/${datadir} $mfccdir
-    steps/compute_cmvn_stats.sh data/${datadir}
-    utils/fix_data_dir.sh data/$datadir
-  done
+
+
+  utils/fix_data_dir.sh $datadir
+  steps/make_mfcc.sh --cmd "$train_cmd" --nj $nj $datadir exp/make_mfcc/${rec_id} $mfccdir
+  steps/compute_cmvn_stats.sh ${datadir}
+  utils/fix_data_dir.sh $datadir
+
 fi
+
+ali_dir=exp/tri3b_fmllr_ali_cleaned_${testset}/${rec_id}/
 
 #Forced Alignment
 if [[ $stage -le 3 ]]; then
@@ -97,7 +101,7 @@ if [[ $stage -le 3 ]]; then
   echo
 
   local/align_fmllr_mirex.sh  --cmd "$train_cmd" \
-    data/${testset} data/lang exp/tri3b_cleaned exp/tri3b_fmllr_ali_cleaned_${testset} || exit 1;
+    $datadir data/lang exp/tri3b_cleaned $ali_dir || exit 1;
 
 fi
 
@@ -111,14 +115,16 @@ if [[ $stage -le 4 ]]; then
   echo
 
   [ -d $out_dir ] || mkdir "$out_dir"
-  save_dir=$out_dir/${testset}
+  dataset_dir=$out_dir/$testset 
+  [ -d $dataset_dir ] || mkdir "$dataset_dir"
+  save_dir=$dataset_dir/$rec_id
   [ -d $save_dir ] || mkdir "$save_dir"
-  ali_dir=exp/tri3b_fmllr_ali_cleaned_${testset}/
-  segments_path='data/'${testset}'/segments'
+  segments_path=$datadir'/segments'
+
   lexicon_path='data/local/dict/lexicon.txt'
 
   echo "Extracting alignments & Formatting them for visualization and evaluation"
-  for i in  exp/tri3b_fmllr_ali_cleaned_${testset}/ali.*.gz;
+  for i in  ${ali_dir}/ali.*.gz;
   do $KALDI_ROOT/src/bin/ali-to-phones --ctm-output exp/tri3b_cleaned/final.mdl \
   ark:"gunzip -c $i|" -> ${i%.gz}.ctm;
   done;
