@@ -117,7 +117,8 @@ if [[ $stage -le 4 ]]; then
   [ -d $out_dir ] || mkdir "$out_dir"
   dataset_dir=$out_dir/$testset 
   [ -d $dataset_dir ] || mkdir "$dataset_dir"
-  save_dir=$dataset_dir/$rec_id
+  #save_dir=$dataset_dir/$rec_id
+  save_dir=$dataset_dir/
   [ -d $save_dir ] || mkdir "$save_dir"
   segments_path=$datadir'/segments'
 
