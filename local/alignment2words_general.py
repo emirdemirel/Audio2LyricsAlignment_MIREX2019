@@ -132,6 +132,7 @@ def pron2word(rec_id, prons_list, lexicon, save_dir,text_path):
                     unk_token = data_lexicon.index(word)
                 elif word_candidates[0] == '<UNK>':
                     word = data_lexicon[unk_token+1]
+            word = word.replace(' ','')
             start = line.split(" ")[-2]
             end = line.split(" ")[-1]
             word_ali.write(start + '\t' + end + '\t' + word + '\n')
