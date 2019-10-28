@@ -125,10 +125,13 @@ def pron2word(rec_id, prons_list, lexicon, save_dir,text_path):
                 # TODO - filter words according to song-specific groundtruth
                 # look up the word from the pronunciation in the dictionary
             word_candidates = lexicon.get(prons)
-            for w in word_candidates:
+            for w_ind in range(len(word_candidates)):
                 #w = w.replace('"',"").replace("'","").replace('u',"")
-                if w in data_lexicon:
-                    word = w
+                if word_candidates[w_ind] in data_lexicon:
+                    word = word_candidates[w_ind]
+                    unk_token = data_lexicon.index(word)
+                elif word_candidates[0] == '<UNK>':
+                    word = data_lexicon[unk_token+1]
             start = line.split(" ")[-2]
             end = line.split(" ")[-1]
             word_ali.write(start + '\t' + end + '\t' + word + '\n')
