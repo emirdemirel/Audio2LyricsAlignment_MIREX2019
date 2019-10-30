@@ -38,7 +38,7 @@ def merge_alignments_ctm(ali_dir):
             if file.endswith('.ctm'):
                 f = pd.read_csv(os.path.join(ali_dir,file), delimiter = ' ', header = None, names = colnames)
                 aligns.append(f)
-                #print(os.path.join(ali_dir,file))
+
     return(pd.concat(aligns,axis=0))  
     
 
@@ -109,29 +109,25 @@ def pron2word(rec_id, prons_list, lexicon, save_dir,text_path):
 
     #read 'text' file to create a lexicon that consists of words from the data only
     text = pd.read_csv(text_path,header=None)
-    for i in range(len(text)):
-        text.iloc[i][0] = text.iloc[i][0].split(' ',1)
+    text.iloc[0][0] = text.iloc[0][0].split(' ',1)
+
     #create a lexicon specific for the utterance
     data_lexicon = []
-    for i in range(len(text)):
-        data_lexicon.append(text.iloc[i][0][1].split(' '))
-    data_lexicon = list(dict.fromkeys(list(itertools.chain.from_iterable(data_lexicon))))
+    data_lexicon = list(dict.fromkeys(list(itertools.chain.from_iterable([text.iloc[0][0][1].split(' ')]))))
+
     for line in prons_list:
         line = line.strip()
         prons = line.split(" ")[:-2]
         # get the pronunciation
         if prons[0] != 'SIL':
             prons = " ".join(prons)
-                # TODO - filter words according to song-specific groundtruth
-                # look up the word from the pronunciation in the dictionary
             word_candidates = lexicon.get(prons)
             for w_ind in range(len(word_candidates)):
-                #w = w.replace('"',"").replace("'","").replace('u',"")
                 if word_candidates[w_ind] in data_lexicon:
                     word = word_candidates[w_ind]
                     unk_token = data_lexicon.index(word)
                 elif word_candidates[0] == '<UNK>':
-                    word = data_lexicon[unk_token+1]
+                    word = text.iloc[0][0][1].split(' ')[unk_token+1]
             word = word.replace(' ','')
             start = line.split(" ")[-2]
             end = line.split(" ")[-1]
@@ -171,7 +167,6 @@ def split_alignments_per_recording(merged_alignments, segments, lexicon, phns, s
 
     for i in range(len(merged_alignments)):
         
-        #rec_id_next, num_segment = merged_alignments.iloc[i,0].split('_segment_')
         rec_id_next = merged_alignments.iloc[i,0]
 
         rec_alignments.append(merged_alignments.iloc[i])      
@@ -180,7 +175,6 @@ def split_alignments_per_recording(merged_alignments, segments, lexicon, phns, s
             rec_alignments = pd.DataFrame(rec_alignments,columns = colnames)
 
             rec_alignments = sort_segments(rec_alignments)
-            #rec_alignments.to_csv(os.path.join(save_dir,rec_id + '.txt'), header=None, index=None, sep=' ', mode='a')
             rec_ali_phn = format_alignments(rec_alignments, segments_dict, phns, save_dir)  
             #print('Alignments sorted and formatted! :')
             pron2word_file, prons_list = phon2pron(rec_ali_phn)
