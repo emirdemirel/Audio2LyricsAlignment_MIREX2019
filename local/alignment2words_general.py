@@ -111,10 +111,11 @@ def pron2word(rec_id, prons_list, lexicon, save_dir,text_path):
     text = pd.read_csv(text_path,header=None)
     text.iloc[0][0] = text.iloc[0][0].split(' ',1)
 
+    words_list = text.iloc[0][0][1]
     #create a lexicon specific for the utterance
-    data_lexicon = []
-    data_lexicon = list(dict.fromkeys(list(itertools.chain.from_iterable([text.iloc[0][0][1].split(' ')]))))
+    data_lexicon = list(dict.fromkeys(list(itertools.chain.from_iterable([words_list.split(' ')]))))
 
+    unk_token=0
     for line in prons_list:
         line = line.strip()
         prons = line.split(" ")[:-2]
@@ -125,13 +126,14 @@ def pron2word(rec_id, prons_list, lexicon, save_dir,text_path):
             for w_ind in range(len(word_candidates)):
                 if word_candidates[w_ind] in data_lexicon:
                     word = word_candidates[w_ind]
-                    unk_token = data_lexicon.index(word)
                 elif word_candidates[0] == '<UNK>':
-                    word = text.iloc[0][0][1].split(' ')[unk_token+1]
+                    word = words_list.split(' ')[unk_token]
             word = word.replace(' ','')
             start = line.split(" ")[-2]
             end = line.split(" ")[-1]
             word_ali.write(start + '\t' + end + '\t' + word + '\n')
+                    
+            unk_token = unk_token + 1
 
 
 def format_alignments(rec_alignments, segments_dict, phns, save_dir):
