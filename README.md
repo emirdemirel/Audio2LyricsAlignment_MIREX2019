@@ -1,6 +1,11 @@
 # Audio2LyricsAlignment_MIREX2019
 
-Repository prepared for the MIREX 2019 - Audio-to-Lyrics Alignment Challenge
+Repo for the MIREX 2019 - Audio-to-Lyrics Alignment Challenge. If you intend to use the code in your project, please cite our work as follows:
+
+@article{demirelmirex,
+  title={MIREX 2019-AUDIO-TO-LYRICS ALIGNMENT CHALLENGE 2019},
+  author={Demirel, Emir}
+}
 
 ## Requirements
 
