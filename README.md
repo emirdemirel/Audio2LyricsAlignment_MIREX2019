@@ -3,10 +3,10 @@
 Repo for the MIREX 2019 - Audio-to-Lyrics Alignment Challenge. If you intend to use the code in your project, please cite our work as follows:
 
 ```
-@article{demirelmirex,
-  title={MIREX 2019 - AUDIO-TO-LYRICS ALIGNMENT CHALLENGE},
+@inproceedings{demirel2019mirex,
+  title={MIREX 2019 - Audio-to-Lyrics Alignment Challenge},
   year={2019},
-  conference={International Society for Music Information Retrieval (ISMIR) in Delft, NL}
+  booktitle={International Society for Music Information Retrieval (ISMIR) in Delft, NL},
   author={Demirel, Emir}
 }
 ```
