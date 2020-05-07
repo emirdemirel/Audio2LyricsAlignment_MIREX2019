@@ -1,16 +1,4 @@
 #!/bin/bash
-# Copyright 2012  Johns Hopkins University (Author: Daniel Povey)
-# Apache 2.0
-
-# Computes training alignments; assumes features are (LDA+MLLT or delta+delta-delta)
-# + fMLLR (probably with SAT models).
-# It first computes an alignment with the final.alimdl (or the final.mdl if final.alimdl
-# is not present), then does 2 iterations of fMLLR estimation.
-
-# If you supply the --use-graphs option, it will use the training
-# graphs from the source directory (where the model is).  In this
-# case the number of jobs must match the source directory.
-
 
 # Begin configuration section.
 stage=0
