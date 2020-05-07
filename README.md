@@ -4,7 +4,9 @@ Repo for the MIREX 2019 - Audio-to-Lyrics Alignment Challenge. If you intend to 
 
 ```
 @article{demirelmirex,
-  title={MIREX 2019-AUDIO-TO-LYRICS ALIGNMENT CHALLENGE 2019},
+  title={MIREX 2019 - AUDIO-TO-LYRICS ALIGNMENT CHALLENGE},
+  year={2019},
+  conference={International Society for Music Information Retrieval (ISMIR) in Delft, NL}
   author={Demirel, Emir}
 }
 ```
